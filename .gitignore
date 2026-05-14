@@ -8,6 +8,14 @@ lookup.json
 candidates.json
 indices/
 texts/
+md/
+pages/
+chapters/
+references/
+
+# Local notes and scratch files
+book-inbox.md
+out.wiki
 
 # Python
 __pycache__/
