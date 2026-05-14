@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# ts — textbook-db fuzzy search
+# Usage: ts "psychosis"  →  txdb search "psychosis"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(dirname "$SCRIPT_DIR")"
+
+exec python3 "$REPO_DIR/txdb.py" search "$@"

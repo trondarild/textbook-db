@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# txdb — textbook-db query CLI wrapper
+# Resolves the repo location from this script's path so it works
+# regardless of where it is called from or symlinked to.
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(dirname "$SCRIPT_DIR")"
+
+exec python3 "$REPO_DIR/txdb.py" "$@"

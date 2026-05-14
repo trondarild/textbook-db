@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# tl — textbook-db lookup with fuzzy expansion
+# Usage: tl "hippocampus"  →  txdb lookup "hippocampus" --expand
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$(dirname "$SCRIPT_DIR")"
+
+exec python3 "$REPO_DIR/txdb.py" lookup "$@" --expand
