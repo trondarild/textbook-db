@@ -1,56 +1,11 @@
 {
-  "buzaki2011": {
-    "title": "Rhythms of the Brain",
-    "author": "Buzaki",
-    "year": 2011,
-    "pdf": "/Users/trond/books/Bøker/textbooks/cognitive science/Buzaki 2011 - Rhythms of the brain.pdf",
-    "text": "texts/Buzaki2011-RhythmsOfTheBrain.txt",
-    "index_start_line": 15773,
-    "subentry_strategy": "indent_only"
-  },
-  "gazzaniga2014": {
-    "title": "Cognitive Neuroscience: The Biology of the Mind",
-    "author": "Gazzaniga",
-    "year": 2014,
-    "pdf": "/Users/trond/books/Bøker/textbooks/cognitive science/Cognitive neuroscience/Gazzaniga 2014 - Cognitive Neuroscience - The Biology of the Mind.pdf",
-    "text": "texts/Gazzaniga2014-CognitiveNeuroscience.txt",
-    "index_start_line": 66855,
-    "subentry_strategy": "indent_only"
-  },
-  "kandel2021": {
-    "title": "Principles of Neural Science, 6th ed.",
-    "author": "Kandel",
-    "year": 2021,
-    "pdf": "/Users/trond/books/Bøker/textbooks/cognitive science/Cognitive neuroscience/Kandel 2021 - Principles of neural science sixth.pdf",
-    "text": "texts/Kandel2021-PrinciplesOfNeuralScience.txt",
-    "index_start_line": 151975,
-    "subentry_strategy": "capitalize"
-  },
-  "baars2013": {
-    "title": "Fundamentals of Cognitive Neuroscience",
-    "author": "Baars",
-    "year": 2013,
-    "pdf": "/Users/trond/books/Bøker/textbooks/cognitive science/Cognitive neuroscience/Baars 2013 - Fundamentals of cognitive neuroscience.pdf",
-    "text": "texts/Baars2013-FundamentalsOfCognitiveNeuroscience.txt",
-    "index_start_line": 21200,
-    "subentry_strategy": "capitalize"
-  },
-  "yudofsky2018": {
-    "title": "Textbook of Neuropsychiatry and Clinical Neurosciences",
-    "author": "Yudofsky & Hales",
-    "year": 2018,
-    "epub_path": "/Users/trond/books/Bøker/textbooks/psychiatry/Yudofsky & Hales 2018 - Neuropsychiatry.epub",
-    "text": "texts/Yudofsky2018.txt",
-    "index_source": "epub_direct",
-    "subentry_strategy": "capitalize"
-  },
-  "gosseries2016": {
-    "title": "The Neurology of Consciousness, 2nd ed.",
-    "author": "Gosseries",
-    "year": 2016,
-    "pdf": "/Users/trond/books/Bøker/textbooks/cognitive science/Gosseries 2016 - The Neurology of Consciousness.pdf",
-    "text": "/Users/trond/Documents/consciousness-rhythms-and-tubes/texts/Gosseries2016-NeurologyOfConsciousness.txt",
-    "index_start_line": 44920,
+  "_example": {
+    "title": "Book Title",
+    "author": "Author Name",
+    "year": 2024,
+    "pdf": "/path/to/book.pdf",
+    "text": "texts/BookTitle2024.txt",
+    "index_start_line": 0,
     "subentry_strategy": "capitalize"
   }
 }
