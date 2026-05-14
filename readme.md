@@ -95,30 +95,31 @@ Use `python3 extract_index.py --detect <key>` to find `index_start_line` automat
 
 ## Querying
 
-### CLI
+### Shell commands
+
+Add `bin/` to your PATH once:
 
 ```bash
-# Exact lookup with fuzzy expansion
-python3 txdb.py lookup "Hippocampus" --expand
-
-# Case-insensitive lookup
-python3 txdb.py lookup "hippocampus" --expand
-
-# Fuzzy search when the exact term is unknown
-python3 txdb.py search "memory consolidation"
-
-# Match a claim sentence to relevant terms
-python3 txdb.py claim "oscillations coordinate memory consolidation during sleep"
-
-# List all books with term counts
-python3 txdb.py books
-
-# DB statistics
-python3 txdb.py stats
-
-# JSON output for piping
-python3 txdb.py lookup "Hippocampus" --expand --json | jq '.'
+export PATH="$PATH:/path/to/textbook-db/bin"   # add to ~/.zshrc or ~/.bashrc
 ```
+
+Then use the short commands from anywhere:
+
+```bash
+tl "Hippocampus"                                    # lookup + fuzzy expansion
+ts "psychosis"                                      # fuzzy search across all terms
+tc "oscillations coordinate memory during sleep"    # match a claim to terms
+txdb books                                          # list books with term counts
+txdb stats                                          # DB statistics
+txdb lookup "Hippocampus" --expand --json | jq '.'  # JSON output for piping
+```
+
+| Command | Expands to |
+|---------|-----------|
+| `tl TERM` | `txdb lookup TERM --expand` |
+| `ts QUERY` | `txdb search QUERY` |
+| `tc TEXT` | `txdb claim TEXT` |
+| `txdb …` | full CLI with all subcommands and flags |
 
 ### Direct SQLite
 
