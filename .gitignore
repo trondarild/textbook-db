@@ -1,5 +1,6 @@
 # Local installation — not committed
 registry.json
+todo.md
 
 # Generated files — rebuilt by the pipeline
 textbook_db.sqlite
