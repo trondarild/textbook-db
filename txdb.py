@@ -104,7 +104,7 @@ def cmd_search(args, conn) -> int:
         if not hits:
             print("  (no results)")
         for h in hits:
-            print(f"  [{int(h['score']):3d}]  {h['term']:<50}  {h['n_books']} book(s)")
+            _fmt_hit(h, conn, f"{int(h['score']):3d}")
     return 0 if hits else 1
 
 

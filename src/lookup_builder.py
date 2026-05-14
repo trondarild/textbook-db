@@ -30,6 +30,25 @@ def build_lookup(
                 lookup[term]["books"].append(key)
             lookup[term]["pages"][key] = pages
 
+    # Second pass: fill empty page lists from subentries.
+    # e.g. 'hippocampus' pages=[] in Gazzaniga, but 'hippocampus and' has pages —
+    # aggregate all subentry pages whose key starts with term + " ".
+    for key, index in indices.items():
+        for term, entry in lookup.items():
+            if entry["pages"].get(key) != []:
+                continue
+            prefix = term + " "
+            seen: set[str] = set()
+            agg: list[str] = []
+            for idx_term, idx_pages in index.items():
+                if idx_term.startswith(prefix) and idx_pages:
+                    for p in idx_pages:
+                        if p not in seen:
+                            seen.add(p)
+                            agg.append(p)
+            if agg:
+                entry["pages"][key] = agg
+
     return dict(
         sorted(lookup.items(), key=lambda kv: (-len(kv[1]["books"]), kv[0].lower()))
     )

@@ -84,11 +84,9 @@ def search(query: str, conn: sqlite3.Connection, limit: int = 20) -> list[dict]:
     for term, score, _ in matches:
         if score < 50:
             continue
-        row = conn.execute(
-            "SELECT n_books FROM terms WHERE term = ?", (term,)
-        ).fetchone()
-        results.append({"term": term, "score": score,
-                         "n_books": row["n_books"] if row else 0})
+        hit = lookup(term, conn)
+        hit["score"] = score
+        results.append(hit)
         if len(results) == limit:
             break
     return results

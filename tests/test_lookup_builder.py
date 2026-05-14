@@ -53,3 +53,34 @@ class TestBuildLookup:
         result = build_lookup(INDICES)
         for v in result.values():
             assert len(v["books"]) == len(set(v["books"]))
+
+
+class TestSubentryPageAggregation:
+    def test_empty_parent_filled_from_subentries(self):
+        indices = {"book_a": {"memory": [], "memory consolidation": ["10", "11"], "memory retrieval": ["20"]}}
+        result = build_lookup(indices)
+        assert result["memory"]["pages"]["book_a"] == ["10", "11", "20"]
+
+    def test_non_empty_parent_not_overwritten(self):
+        indices = {"book_a": {"memory": ["5"], "memory consolidation": ["10"]}}
+        result = build_lookup(indices)
+        assert result["memory"]["pages"]["book_a"] == ["5"]
+
+    def test_subentry_deduplication(self):
+        indices = {"book_a": {"eeg": [], "eeg during sleep": ["30", "31"], "eeg patterns": ["30", "32"]}}
+        result = build_lookup(indices)
+        assert result["eeg"]["pages"]["book_a"] == ["30", "31", "32"]
+
+    def test_no_aggregation_when_no_matching_subentries(self):
+        indices = {"book_a": {"theta": [], "alpha waves": ["5"]}}
+        result = build_lookup(indices)
+        assert result["theta"]["pages"]["book_a"] == []
+
+    def test_aggregation_per_book_independent(self):
+        indices = {
+            "book_a": {"memory": [], "memory loss": ["7"]},
+            "book_b": {"memory": ["99"]},
+        }
+        result = build_lookup(indices)
+        assert result["memory"]["pages"]["book_a"] == ["7"]
+        assert result["memory"]["pages"]["book_b"] == ["99"]
