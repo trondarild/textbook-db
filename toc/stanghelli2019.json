@@ -1,0 +1,390 @@
+[
+  {
+    "title": "Edmund Husserl",
+    "start_page": 31
+  },
+  {
+    "title": "The Role of Psychology According to Edith Stein",
+    "start_page": 42
+  },
+  {
+    "title": "Martin Heidegger",
+    "start_page": 49
+  },
+  {
+    "title": "Jean-Paul Sartre",
+    "start_page": 61
+  },
+  {
+    "title": "Merleau-Ponty, Phenomenology, and Psychopathology",
+    "start_page": 69
+  },
+  {
+    "title": "Simone de Beauvoir",
+    "start_page": 80
+  },
+  {
+    "title": "Max Scheler",
+    "start_page": 87
+  },
+  {
+    "title": "Hans-Georg Gadamer",
+    "start_page": 94
+  },
+  {
+    "title": "Paul Ricoeur",
+    "start_page": 105
+  },
+  {
+    "title": "Emmanuel Levinas",
+    "start_page": 114
+  },
+  {
+    "title": "Critiques and Integrations of Phenomenology: Derrida, Foucault, Deleuze",
+    "start_page": 123
+  },
+  {
+    "title": "Karl Jaspers",
+    "start_page": 132
+  },
+  {
+    "title": "Eug\u00e8ne Minkowski",
+    "start_page": 142
+  },
+  {
+    "title": "Ludwig Binswanger",
+    "start_page": 151
+  },
+  {
+    "title": "Medard Boss",
+    "start_page": 159
+  },
+  {
+    "title": "Erwin Straus",
+    "start_page": 169
+  },
+  {
+    "title": "Ernst Kretschmer",
+    "start_page": 179
+  },
+  {
+    "title": "Hubertus Tellenbach",
+    "start_page": 187
+  },
+  {
+    "title": "Kimura Bin",
+    "start_page": 195
+  },
+  {
+    "title": "Wolfgang Blankenburg",
+    "start_page": 205
+  },
+  {
+    "title": "Franco Basaglia",
+    "start_page": 214
+  },
+  {
+    "title": "Bibliography",
+    "start_page": 220
+  },
+  {
+    "title": "Frantz Fanon",
+    "start_page": 223
+  },
+  {
+    "title": "R. D. Laing",
+    "start_page": 234
+  },
+  {
+    "title": "On the Subject Matter of Phenomenological Psychopathology",
+    "start_page": 243
+  },
+  {
+    "title": "The Phenomenological Approach",
+    "start_page": 260
+  },
+  {
+    "title": "Clinical Phenomenology: Descriptive, Structural, and Transcendental Phenomenology",
+    "start_page": 274
+  },
+  {
+    "title": "Genetic Phenomenology",
+    "start_page": 286
+  },
+  {
+    "title": "Phenomenology and Hermeneutics",
+    "start_page": 298
+  },
+  {
+    "title": "Introspection, Phenomenology, and Psychopathology",
+    "start_page": 313
+  },
+  {
+    "title": "Phenomenology and the Cognitive Sciences",
+    "start_page": 329
+  },
+  {
+    "title": "Phenomenology, Naturalism, and the Neurosciences",
+    "start_page": 343
+  },
+  {
+    "title": "Normality",
+    "start_page": 356
+  },
+  {
+    "title": "Self",
+    "start_page": 372
+  },
+  {
+    "title": "Emotion",
+    "start_page": 381
+  },
+  {
+    "title": "The Unconscious in Phenomenology",
+    "start_page": 392
+  },
+  {
+    "title": "Intentionality",
+    "start_page": 403
+  },
+  {
+    "title": "Personhood",
+    "start_page": 415
+  },
+  {
+    "title": "Befindlichkeit: Disposition",
+    "start_page": 426
+  },
+  {
+    "title": "Values and Values-based Practice",
+    "start_page": 439
+  },
+  {
+    "title": "Embodiment",
+    "start_page": 454
+  },
+  {
+    "title": "Autonomy",
+    "start_page": 462
+  },
+  {
+    "title": "Alterity",
+    "start_page": 471
+  },
+  {
+    "title": "Time",
+    "start_page": 481
+  },
+  {
+    "title": "Conscience",
+    "start_page": 490
+  },
+  {
+    "title": "Understanding and Explaining",
+    "start_page": 502
+  },
+  {
+    "title": "Consciousness and its Disorders",
+    "start_page": 511
+  },
+  {
+    "title": "The Experience of Time and its Disorders",
+    "start_page": 527
+  },
+  {
+    "title": "Attention, Concentration, Memory, and their Disorders",
+    "start_page": 540
+  },
+  {
+    "title": "Thought, Speech, and Language Disorders",
+    "start_page": 550
+  },
+  {
+    "title": "Affectivity and Its Disorders",
+    "start_page": 561
+  },
+  {
+    "title": "Selfhood and Its Disorders",
+    "start_page": 569
+  },
+  {
+    "title": "Vital Anxiety",
+    "start_page": 582
+  },
+  {
+    "title": "Hallucinations and Phenomenal Consciousness",
+    "start_page": 593
+  },
+  {
+    "title": "Bodily Experience and its Disorders",
+    "start_page": 622
+  },
+  {
+    "title": "The Psychopathological Concept of Catatonia",
+    "start_page": 635
+  },
+  {
+    "title": "Eating Behavior and its Disorders",
+    "start_page": 647
+  },
+  {
+    "title": "The Phenomenological Clarification of Grief and its Relevance for Psychiatry",
+    "start_page": 658
+  },
+  {
+    "title": "Gender Dysphoria",
+    "start_page": 675
+  },
+  {
+    "title": "Hysteria, Dissociation, Conversion, and Somatization",
+    "start_page": 693
+  },
+  {
+    "title": "Obsessions and Phobias",
+    "start_page": 706
+  },
+  {
+    "title": "Thoughts without Thinkers: Agency, Ownership, and the Paradox of Thought Insertion",
+    "start_page": 715
+  },
+  {
+    "title": "The Life-World of Persons with SchizophreniaConsidered as a Disorder of Basic Self",
+    "start_page": 728
+  },
+  {
+    "title": "The Life-World of Persons with Mood Disorders",
+    "start_page": 752
+  },
+  {
+    "title": "The Life-World of the Obsessive-Compulsive Person",
+    "start_page": 772
+  },
+  {
+    "title": "The Life-World of Persons with Hysteria",
+    "start_page": 790
+  },
+  {
+    "title": "The Life-World of Persons with Borderline Personality Disorder",
+    "start_page": 808
+  },
+  {
+    "title": "The Life-World of Persons with Drug Addictions",
+    "start_page": 828
+  },
+  {
+    "title": "The Life-World of Persons with Autism",
+    "start_page": 843
+  },
+  {
+    "title": "Eating Disorders as Disorders of Embodiment and Identity",
+    "start_page": 861
+  },
+  {
+    "title": "First-Rank Symptoms of Schizophrenia",
+    "start_page": 878
+  },
+  {
+    "title": "Schizophrenic Delusion",
+    "start_page": 888
+  },
+  {
+    "title": "Delusional Mood",
+    "start_page": 896
+  },
+  {
+    "title": "Delusion and Mood Disorders",
+    "start_page": 908
+  },
+  {
+    "title": "Paranoia",
+    "start_page": 927
+  },
+  {
+    "title": "Context",
+    "start_page": 952
+  },
+  {
+    "title": "Affective Temperaments",
+    "start_page": 969
+  },
+  {
+    "title": "Schizophrenic Autism",
+    "start_page": 984
+  },
+  {
+    "title": "Dysphoria in Borderline Persons",
+    "start_page": 1002
+  },
+  {
+    "title": "Psychosis High-Risk States",
+    "start_page": 1017
+  },
+  {
+    "title": "Psychopathology and Law",
+    "start_page": 1041
+  },
+  {
+    "title": "Atmospheres and the Clinical Encounter",
+    "start_page": 1056
+  },
+  {
+    "title": "The Psychopathology of Psychopaths",
+    "start_page": 1068
+  },
+  {
+    "title": "A Phenomenological-Contextual, Existential, and Ethical Perspective on Emotional Trauma",
+    "start_page": 1086
+  },
+  {
+    "title": "Phenomenological Psychopathology and Neuroscience",
+    "start_page": 1099
+  },
+  {
+    "title": "Phenomenological Psychopathology and Quantitative Research",
+    "start_page": 1138
+  },
+  {
+    "title": "Phenomenological Psychopathology and Psychotherapy",
+    "start_page": 1151
+  },
+  {
+    "title": "Phenomenological Psychopathology and Psychiatric Ethics",
+    "start_page": 1173
+  },
+  {
+    "title": "Phenomenological Psychopathology and America\u2019s Social Life-World",
+    "start_page": 1190
+  },
+  {
+    "title": "Phenomenological Psychopathology and the Formation of Clinicians",
+    "start_page": 1210
+  },
+  {
+    "title": "Phenomenological Psychopathology and Psychiatric Classification",
+    "start_page": 1225
+  },
+  {
+    "title": "Phenomenological Psychopathology and Clinical Decision-Making",
+    "start_page": 1243
+  },
+  {
+    "title": "Phenomenological Psychopathology and Psychoanalysis",
+    "start_page": 1255
+  },
+  {
+    "title": "Phenomenological Psychopathology and Autobiography",
+    "start_page": 1268
+  },
+  {
+    "title": "Phenomenological Psychopathology, Neuroscience, Psychiatric Disorders, and the Intentional Arc",
+    "start_page": 1283
+  },
+  {
+    "title": "Phenomenological Psychopathology of Neurodiversity",
+    "start_page": 1299
+  },
+  {
+    "title": "The Bodily Self in Schizophrenia: From Phenomenology to Neuroscience",
+    "start_page": 1338
+  }
+]
