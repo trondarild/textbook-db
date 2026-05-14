@@ -33,6 +33,15 @@ apt install poppler-utils     # Debian/Ubuntu
 
 ## Adding books
 
+After cloning, copy the example registry and fill in your paths:
+
+```bash
+cp registry.example.json registry.json
+# edit registry.json with your book paths
+```
+
+`registry.json` is gitignored — your local paths stay local.
+
 ### PDF book
 
 ```bash

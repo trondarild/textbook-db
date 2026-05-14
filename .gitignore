@@ -1,3 +1,6 @@
+# Local installation — not committed
+registry.json
+
 # Generated files — rebuilt by the pipeline
 textbook_db.sqlite
 lookup.json
