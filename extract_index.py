@@ -9,6 +9,8 @@ Usage:
 Output: indices/<book_key>.json  — {term: [page_numbers_as_strings]}
 """
 
+import importlib
+import importlib.util
 import json
 import sys
 from pathlib import Path
@@ -17,6 +19,16 @@ from src.index_parser import detect_index_start, parse_index
 
 REGISTRY = Path("registry.json")
 PROJECT_ROOT = Path(__file__).parent
+
+
+def _load_plugin(key: str):
+    plugin_path = PROJECT_ROOT / "plugins" / f"{key}.py"
+    if not plugin_path.exists():
+        return None
+    spec = importlib.util.spec_from_file_location(f"plugins.{key}", plugin_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def resolve_text_path(entry: dict) -> Path:
@@ -43,6 +55,11 @@ def run_extract(key: str, entry: dict) -> None:
 
     strategy = entry.get("subentry_strategy", "capitalize")
     entries = parse_index(lines[start - 1:], strategy)
+
+    plugin = _load_plugin(key)
+    if plugin and hasattr(plugin, "post_index_parse"):
+        meta = {"key": key, "entry": entry}
+        entries = plugin.post_index_parse(entries, meta)
 
     out_dir = PROJECT_ROOT / "indices"
     out_dir.mkdir(exist_ok=True)
