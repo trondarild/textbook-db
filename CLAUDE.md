@@ -67,13 +67,21 @@ Top-level scripts are thin CLI wrappers; all logic lives in `src/`.
 
 ## Adding a New Book
 
+### Copyright policy
+Only **code, plugins, TOC metadata, and tests** are committed. All book-derived content
+(`texts/`, `indices/`, `md/`, `pages/`, `chapters/`, `references/`, `lookup.json`,
+`candidates.json`, `textbook_db.sqlite`) is gitignored and rebuilt locally from the source PDFs.
+`toc/<key>.json` files (chapter titles + page numbers only) are safe to commit — structural
+metadata is not copyrightable. Do not commit PDFs, extracted text, or any other reproduction
+of book content.
+
 ### PDF book
 1. Add entry to `registry.json` (see existing entries as template).
 2. `python pdf_to_text.py <key>` — convert PDF.
 3. `python extract_index.py --detect <key>` → confirm/set `index_start_line` and `subentry_strategy`.
 4. `python extract_index.py <key>` — extract index.
 5. `python text_to_md.py <key>` — generate md file; add `md_path` to registry.
-6. Optionally extract TOC via `echo "path.pdf" | jpdfbm` → `toc/<key>.json`; wire into plugin if needed.
+6. Extract TOC via `echo "path.pdf" | jpdfbm` → `toc/<key>.json`; wire into plugin if needed.
 7. `python extract_refs.py <key> --no-link` — verify chapter/ref detection; add plugin if needed.
 8. `python build_lookup.py && python fuzzy_match.py && python extract_refs.py` — full rebuild.
 
